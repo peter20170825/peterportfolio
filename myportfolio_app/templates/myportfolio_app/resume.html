@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<title>Peter Modo - Curriculum Vitae</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<meta name="description" content="The Curriculum Vitae of Joe Bloggs."/>
+<meta charset="UTF-8">
+
+<link type="text/css" rel="stylesheet" href="{% static 'css/myfolio.css' %}">
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+<body id="top">
+
+    {% include 'myportfolio_app/nav.html' %}
+
+<div id="cv" class="instaFade">
+	<div class="mainDetails">
+		<div id="headshot" class="quickFade">
+			<img src="{% static 'images/my_pic.jpg' %}" alt="Alan Smith" />
+		</div>
+
+		<div id="name">
+			<h1 class="quickFade delayTwo">Peter Modo</h1>
+			<h2 class="quickFade delayThree">Full Stack WebDeveloper/AutoCAD Draftsman</h2>
+		</div>
+
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+				<li> <a href="mailto:peter_modo@yahoo.com" target="_blank">peter_modo@yahoo.com</a></li>
+				<li> <a href="http://www.petermodo.com">www.petermodo.com</a></li>
+				<li>+2347036731057</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<div id="mainArea" class="quickFade delayFive">
+		<section>
+			<article>
+				<div class="sectionTitle">
+					<h1>Personal Profile</h1>
+				</div>
+
+				<div class="sectionContent">
+					<p>A highly resourceful, innovative and competent Python (Django) developer with more than three years’ experience in the layout, design and coding of website. Knowledgeable of frontend and backend development of web applications and scripts using Javascripts, Python programming languages, MySQL and PostgreSQL databases. Experienced in developing applications and solutions for a wide range of corporate, charity and public sector clients and having the enthusiasm and ambition to complete projects to the highest standard. Looking for a suitable developer position with an ambitious and exciting company.</p>
+				</div>
+			</article>
+			<div class="clear"></div>
+		</section>
+
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Work Experience</h1>
+			</div>
+
+			<div class="sectionContent">
+				<article>
+					<h2>Freelance Python (Django) Developer </h2>
+					<p class="subDetails"> Jan 2020-Present </p>
+					<p>Working with designers, Frontend and Project Management staff to capture requirements for the functional elements of website projects. Also responsible for liaising with clients and ensuring that all work carried out complies with standards and guidelines.</p>
+				</article>
+
+				<article>
+					<h2>AutoCAD/Design Engineer	</h2>
+					<p class="subDetails">January 2017- December 2019</p>
+					<p>Responsible for preparing Piping, mechanical, civil and electrical drawings.Responsible for updating construction drawing due to change in design using AutoCAD</p>
+				</article>
+
+
+			</div>
+			<div class="clear"></div>
+		</section>
+
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Key Skills</h1>
+			</div>
+
+			<div class="sectionContent">
+  				<ul>
+  					 <p><li>Programming languages: JavaScript, Python</li></p>
+  					<p><li>Web technologies and Design Tools: HTML, CSS, jQuery, Django, MySQL, PostgreSQL, Git</li>  </p>
+  					<p><li>Ability to multi-task, react quickly to shifting priorities and meet deadlines</li> </p>
+  					<p><li>Proactive, confident and with a positive ‘can-do’ attitude</li> </p>
+  				<p>	<li>Able to clearly communicate technical data to non-technical colleagues and clients</li> </p>
+  					<p><li>Possessing all-round analysis and programming skills</li> </p>
+  				<p>	<li>Project management</li> </p>
+  				<p>	<li>Rest APIs</li> </p>
+          <p>	<li>Proficient in using AutoCAD Software</li> </p>
+  				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+     <br>
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Education</h1>
+			</div>
+
+			<div class="sectionContent">
+				<article>
+					<h2>Nnamdi Azikiwe University, Anambra State, Nigeria</h2>
+					<p class="subDetails">Qualification</p>
+					<p>Master of Engineering(M.Eng) Mechanical Engineering (2010-2011)</p>
+				</article>
+
+				<article>
+					<h2>Lagos State University, Lagos State, Nigeria</h2>
+					<p class="subDetails">Qualification</p>
+					<p>Bachelor of Science (B.Sc) Mechanical Engineering (2001-2007).</p>
+				</article>
+			</div>
+			<div class="clear" >
+        <footer style='padding-top:25px;'>
+            <h4 style='text-align:center'>copyright &copy; 2023 www.petermodo.com &nbsp;&nbsp;&nbsp;&nbsp; <span><a href="#">Back to top</a></span> </h4>
+          </footer>
+
+      </div>
+		</section>
+
+    <br>
+
+
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3753241-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+
+
+</body>
+</html>

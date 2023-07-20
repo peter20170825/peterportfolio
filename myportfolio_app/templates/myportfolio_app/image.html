@@ -1,0 +1,14 @@
+{% extends 'myportfolio_app/base.html'%}
+{% load static %}
+
+{% block body_content %}
+
+
+    <div class="card shadow-sm">
+
+    <img  class="card-img-top" src="{{my_image.image.url}}"  style='max-width:100%;width:100%;height:auto'  alt="pic">
+          <h1 style='text-align:center;font-size:20px;margin-bottom:30px;'>{{my_image.description}}</h1>
+      </div>
+
+
+{% endblock %}

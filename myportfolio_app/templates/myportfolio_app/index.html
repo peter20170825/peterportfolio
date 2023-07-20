@@ -1,0 +1,57 @@
+{% extends 'myportfolio_app/base.html'%}
+{% load static %}
+
+{% block content %}
+<div class="jumbotron">
+
+  <img src="{% static 'images/mypics.jpg' %}" style='max-width:100%,width:400px;height:400px'  class="card-img-top" alt="...">
+
+        <p> Hi, I'm Peter Modo, a Full Stack Web Developer. I specialize in building the frontend and backend of websites.
+        I have extensive experience using HTML,CSS,Bootstrap,Javascript,Jquery,React,
+        Python,Django, mySQL and postgreSQL.
+        I am also an AutoCAD Draftsman.I specialize in creating 2D and 3D drawings.
+        I look forward to working with prospective clients.</p>
+
+    </div>
+
+{% endblock %}
+
+{% block body_content %}
+
+    <div class="card shadow-sm">
+      <h1 style='font-size:30px;'> Portfolio:</h1>
+
+      <br>
+      {% for folio in my_folio %}
+
+            {% if folio.id == 1 or folio.id == 3 or folio.id == 4 %}
+          <div class="col-md-4">
+              <a href="{%  url 'ImagePage' id=folio.id %}"> <img  class="card-img-top" src="{{folio.image.url}}"  style='max-width:100%;width:400px;height:300px'  alt="pic"></a>
+                <p class="card-text" >{{folio.description}} </p>
+            </div>
+
+            {% elif folio.id == 2 %}
+
+               <div class="col-md-4">
+                  <a id='myimage1' data-toggle="tooltip" data-placement="top" title="click this image to download the Guess Number App" href="{%  url 'download' id=folio.id   %}" download='number.exe' > <img  class="card-img-top" src="{{folio.image.url}}"  style='max-width:100%;width:400px;height:300px'  alt="pic" ></a>
+                     <p class="card-text" >{{folio.description}} </p>
+                 </div>
+
+             {% else %}
+
+             <div class="col-md-4">
+               <a id='myimage2' data-toggle="tooltip" data-placement="top" title="This is another website that i built from scratch"  href="http://www.marpetcad.com"  target='_self'> <img class="card-img-top" src="{{folio.image.url}}"  style='max-width:100%;width:400px;height:300px'  alt="pic"></a>
+                   <p  class="card-text" >{{folio.description}} </p>
+               </div>
+
+            {% endif %}
+
+      {% endfor %}
+
+
+        <h1 id='demo'> </h1>
+        <br>
+
+</div>
+
+{% endblock %}

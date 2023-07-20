@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'css/myfolio.css' %}">
+<link rel="stylesheet" href="{% static 'css/popup.css' %}">
+
+
+
+<body>
+
+
+       {% include 'myportfolio_app/nav.html' %}
+
+
+
+            <div class="container" align='center' style='padding:20px'>
+
+                {% block content %}
+
+                {% endblock %}
+
+            </div>
+
+            <div class="container"  style='padding:10px'>
+
+                {% block body_content %}
+
+                {% endblock %}
+
+            </div>
+
+
+            <footer style='padding-bottom:25px;'>
+                <h3 style='text-align:center'>copyright &copy; 2023 www.petermodo.com &nbsp;&nbsp;&nbsp;&nbsp; <span><a href="#">Back to top</a></span> </h3>
+              </footer>
+
+
+            <!-- Latest compiled and minified JQuery -->
+             <script src="http://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin = "anonymous"> </script>
+
+
+                <!-- Latest compiled and minified JavaScript -->
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>

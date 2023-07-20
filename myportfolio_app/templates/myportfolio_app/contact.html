@@ -1,0 +1,69 @@
+
+{% extends 'myportfolio_app/base.html'%}
+{% load static %}
+
+{% block content %}
+
+<div class="container" >
+  <div class="col-sm-12 bg-primary text-white" style='border:2px solid black;border-radius:50px;padding:10px;height:120px;'>
+      <h1 style='font-size:30px;'> Contact Me</h1>
+      <br>
+      <h4><span>Email:</span> <a style='color:white;text-decoration:none;' href="mailto:peter_modo@yahoo.com">peter_modo@yahoo.com</a></h4>
+       <br>
+      <h4> Phone: +2347036731057</h4>
+  </div>
+
+
+  </div>
+
+<div class="container bg-info" style='border:2px solid black;border-radius:50px;'>
+
+  <div class="row">
+
+    <div class="col-sm-8" >
+      <h2 style='padding:20px;'>Contact Form</h2>
+      <form class="form-horizontal was-validated" action="" method='POST'>
+        {% csrf_token %}
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="name">Name:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" placeholder="Enter your Name" name="name" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="email">Email:</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email" required >
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="subject">Subject:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="subject" placeholder="Enter subject" name="subject" required>
+              </div>
+            </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="message">Message:</label>
+            <div class="col-sm-10">
+              <textarea  rows="8" cols="80" class="form-control" id="message" placeholder="Enter message" name="message" required></textarea>
+            </div>
+          </div>
+
+          <div class="form-group" style='padding-bottom:20px;'>
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+      </form>
+    </div>
+
+
+         <div class="col-sm-4" >
+         <img src="{% static 'images/img.jpg' %}" alt=""  class="img-rounded" style="padding:10px;margin-top:20px;width:350px;height:400px;">
+          </div>
+   </div>
+
+</div>
+
+
+{% endblock %}
